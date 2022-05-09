@@ -1,7 +1,6 @@
 
 variable "host_os" {
-  type    = string
-  default = "windows"
+  type = string
 }
 
 variable "aws_region" {
