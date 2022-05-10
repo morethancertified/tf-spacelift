@@ -19,5 +19,5 @@ module "derek-dev" {
   host_os           = "linux"
   node_name         = "derek"
   key_name          = "derek-key"
-  instance_type     = "t2.micro"
+  instance_type     = "t2.large"
 }
