@@ -21,3 +21,13 @@ module "derek-dev" {
   key_name          = "derek-key"
   instance_type     = "t2.micro"
 }
+
+module "susie-dev" {
+  source            = "./compute"
+  security_group_id = [module.networking.security_group_id]
+  subnet_id         = module.networking.subnet_id
+  host_os           = "linux"
+  node_name         = "susie"
+  key_name          = "susie-key"
+  instance_type     = "t2.micro"
+}
