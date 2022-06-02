@@ -9,7 +9,7 @@ module "compute" {
   host_os           = var.host_os
   node_name         = "main"
   key_name          = "main-key"
-  instance_type     = "t2.xlarge"
+  instance_type     = "t2.micro"
 }
 
 module "derek-dev" {
